@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6로 풀어보는 자바스크립트 실습문제(with jQuery)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!--
+    <script type="text/javascript">
+        // F12 버튼 방지
+        $(document).ready(function(){
+            $(document).bind('keydown',function(e){
+                if ( e.keyCode == 123 /* F12 */) {
+                    e.preventDefault();
+                    e.returnValue = false;
+                }
+            });
+        });
+        
+        // 우측 클릭 방지
+        document.onmousedown=disableclick;
+        status="Right click is not available.";
+        
+        function disableclick(event){
+            if (event.button==2) {
+                alert(status);
+                return false;
+            }
+        }
+    </script>-->
+    <script src="js/script.js"></script>
+</head>
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+
+    <h2>ES6로 풀어보는 자바스크립트 실습문제(with jQuery)</h2>
+    <h3>문제1. 템플릿 리터럴(백틱)을 활용하여 배열 데이터를 각 공간에 넣으시오.</h3>
+
+    <section id="ex_01">
+        <div class="frame">
+<!--
+            <div class="box">
+                <div class="dark">
+                    <div class="cont">
+                        <h4>동행1</h4>
+                        <a href="#">상세 보기</a>
+                    </div>
+                </div>
+            </div>
+-->
+        </div>
+    </section>
+
+    <h3>문제2. filter() 함수를 활용하여 아이템 필터링하기</h3>
+
+    <section id="ex_02">
+        <div class="frame">
+            <ul class="sel_btn">
+                <!-- <li><a href=""></a></li> -->
+            </ul>
+            <div class="cont">
+                <!-- <div class="box"></div> -->
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <h3>문제3. class를 활용하여 캐릭터 고르기 구성</h3>
+    <section id="ex_03">
+        <div class="frame">
+            <ul class="sel_btn">
+                <!-- <li><a href=""></a></li> -->
+            </ul>
+
+        </div>
+        <div class="cont">
+
+            <div class="box">
+                <img src="" alt="">
+                <h4></h4>
+                <p></p>
+                <div class="input_line">
+                    <input type="text" placeholder="나만의 이름을 지어주세요.">
+                    <button>입력 완료</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="dark"></div>
+        <div class="popup">
+            <span class="close">×</span>
+            <h3>캐릭터 <span></span>이(가) 생성되었습니다.</h3>
+        </div>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+*{box-sizing: border-box;}
+html, body{margin: 0; padding: 0;}
+section{display: block; margin-bottom:40px;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+.clear{clear:both;}
+
+#ex_01{width: 100%; height: auto; background-color: #ffffbb; padding: 10px 0;}
+#ex_01 .frame{width: 1200px; height: auto; margin: 0 auto; display: flex; justify-content: center; align-items: center;}
+
+#ex_01 .frame .box{width: calc(25% - 20px); height: 240px; margin: 0 10px; background-color: #ccffff; background-size: cover; background-position: 50% 50%;}
+#ex_01 .frame .box .dark{width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); position: relative; opacity:0; transition: opacity 0.5s;}
+#ex_01 .frame .box:hover .dark{opacity:1;}
+#ex_01 .frame .box .dark .cont{position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); text-align: center;}
+#ex_01 .frame .box .dark .cont h4{font-size: 20px; color:#fff; padding-bottom: 20px;}
+#ex_01 .frame .box .dark .cont a{display: inline-block; width: 120px; height: 30px; border-radius:15px; line-height: 28px; border:1px solid #fff; color:#fff; transition: background-color 0.5s; font-size: 14px;}
+#ex_01 .frame .box .dark .cont a:hover{background-color: rgba(255,255,255,0.25);}
+
+
+
+
+
+#ex_02{width: 100%; height: auto; background-color: #bbffff; padding: 10px 0;}
+#ex_02 .frame{width: 1200px; height: auto; margin: 0 auto;}
+#ex_02 .frame ul.sel_btn{display: flex; justify-content:center; align-items: center; padding: 20px 0;}
+#ex_02 .frame ul.sel_btn li{margin: 0 5px;}
+#ex_02 .frame ul.sel_btn li a{display: inline-block; padding: 8px 16px; border:1px solid #999; color:#999; border-radius:8px;}
+#ex_02 .frame ul.sel_btn li:hover a{color:#fff; background-color:#999;}
+#ex_02 .frame ul.sel_btn li.active a{color:#fff; background-color:#999;}
+
+#ex_02 .frame .cont{display: flex; justify-content: center; align-items: center; padding: 10px 0; flex-wrap: wrap;}
+#ex_02 .frame .cont .box{width: calc(25% - 20px); height: 240px; background-color: #ffccff; background-size: cover; margin: 0 10px 20px; transform:scale(0);}
+#ex_02 .frame .cont .box.active{transform:scale(1); transition: transform 0.5s;}
+
+
+
+#ex_03{width: 100%; height: auto; background-color: #ffbbbb; padding: 10px 0 0;}
+#ex_03 .frame{width: 1200px; height: auto; margin: 0 auto;}
+#ex_03 .frame ul.sel_btn{display: flex; justify-content:center; align-items: center; padding: 20px 0;}
+#ex_03 .frame ul.sel_btn li{margin:0 5px;}
+#ex_03 .frame ul.sel_btn li a{display: inline-block; width: 60px; height: 60px; border-radius:4px; background-color: #fff; background-size: cover; background-position: 50% 50%;}
+
+#ex_03 .cont{padding: 40px 0; background: linear-gradient(to right, #d32ac8 0%,#0c88cf 100%); display:none;}
+#ex_03 .cont .box{text-align: center;}
+#ex_03 .cont .box img{height: 120px;}
+#ex_03 .cont .box h4{font-size: 22px; color:#fff; padding: 20px 0;}
+#ex_03 .cont .box p{font-size: 16px; color:#fff; padding-bottom: 40px;}
+
+#ex_03 .cont .box .input_line{width: 600px; margin: 0 auto; border:1px solid rgba(255,255,255, 0.75); padding:20px; border-radius:8px;}
+
+#ex_03 .cont .box .input_line input{display: block; width: 400px; height: 36px; margin: 0 auto; border:1px solid #fff; background-color: rgba(255,255,255,0.8); color:#555; border-radius: 6px; padding: 0 10px; font-size: 18px;}
+
+
+#ex_03 .cont .box .input_line button{margin-top: 20px; border: none; background: #777; color:#fff; border-radius: 6px; padding: 10px 20px; font-size: 18px; cursor: pointer;}
+
+#ex_03 .dark{position: fixed; top:0; left:0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); opacity: 0; z-index: -1;}
+
+#ex_03 .dark.active{opacity: 1; z-index: 1; transition: opacity 0.5s;}
+
+#ex_03 .popup{position: fixed; top:50%; left:50%; transform:translate(-50%, -50%); width: 600px; padding: 20px; background: #fff; border-radius:4px; opacity: 0; z-index: -1;}
+
+#ex_03 .popup.active{opacity: 1; z-index: 1; transition: opacity 0.5s;}
+#ex_03 .popup .close{position: absolute; top:-40px; right:-40px; color:#fff; font-size: 32px; font-weight: bold; cursor: pointer;}
+#ex_03 .popup h3{font-size: 18px; color:#777;}
+#ex_03 .popup h3 span{font-size: 22px; color:#555}
+
+
+
